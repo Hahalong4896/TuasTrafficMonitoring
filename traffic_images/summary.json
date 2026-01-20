@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-20T20:42:59.595445",
+  "last_updated": "2026-01-20T20:52:28.003274",
   "total_days": 1,
-  "total_captures": 2,
+  "total_captures": 3,
   "days": [
     {
       "date": "2026-01-20",
-      "captures": 2,
-      "images": 6
+      "captures": 3,
+      "images": 9
     }
   ]
 }
