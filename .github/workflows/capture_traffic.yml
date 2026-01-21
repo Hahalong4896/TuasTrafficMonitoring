@@ -6,6 +6,10 @@ on:
        - cron: '0 20 * * *'   # 4:00 AM SGT
        - cron: '30 20 * * *'  # 4:30 AM SGT
        - cron: '0 21 * * *'   # 5:00 AM SGT
+       - cron: '30 21 * * *'  # 5:30 AM SGT
+       - cron: '0 22 * * *'   # 6:00 AM SGT
+       - cron: '30 22 * * *'   # 6:30 AM SGT
+        
   workflow_dispatch:
 
 permissions:
