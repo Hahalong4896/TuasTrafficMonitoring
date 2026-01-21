@@ -191,8 +191,7 @@ Automated traffic monitoring for Singapore Tuas Checkpoint at 5 AM daily.
     
     # Add recent days (last 7 days)
     for day in sorted(summary['days'], key=lambda x: x['date'], reverse=True)[:7]:
-        readme_content += f"- **{day['date']}**: {day['captures']} capture(s), {day['images']} image(s)\n
-        
+        readme_content += f"- **{day['date']}**: {day['captures']} capture(s), {day['images']} image(s)\n"
     
     readme_content += """
 
