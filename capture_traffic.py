@@ -7,7 +7,7 @@ Captures traffic images from Singapore LTA DataMall API at scheduled times
 import os
 import json
 import requests
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # Configuration
@@ -18,11 +18,12 @@ OUTPUT_DIR = Path('traffic_images')
 # Tuas Checkpoint Camera IDs (from LTA DataMall)
 # These are the camera IDs for Tuas area
 TUAS_CAMERA_IDS = [
+
     '2701',  # Woodlands Causeway (Towards Johor)
     '2702',  # Woodlands Checkpoint
     '4703',  # Tuas Checkpoint (towards Malaysia)
     '4713',  # Tuas Second Link
-#    '4714',  # Tuas Second Link (alternative view)
+ #   '4714',  # Tuas Second Link (alternative view)
 ]
 
 def get_traffic_images():
@@ -70,7 +71,9 @@ def capture_tuas_cameras():
         return
     
     # Create output directory structure
-    now = datetime.now()
+    # Use Singapore timezone (UTC+8)
+    singapore_tz = timezone(timedelta(hours=8))
+    now = datetime.now(singapore_tz)
     date_folder = now.strftime('%Y-%m-%d')
     time_str = now.strftime('%H-%M-%S')
     
@@ -79,7 +82,7 @@ def capture_tuas_cameras():
     
     print(f"\n{'='*60}")
     print(f"Tuas Checkpoint Traffic Capture")
-    print(f"Date/Time: {now.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Date/Time (SGT): {now.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*60}\n")
     
     # Fetch all camera data
@@ -147,7 +150,7 @@ def generate_summary():
         return
     
     summary = {
-        'last_updated': datetime.now().isoformat(),
+        'last_updated': datetime.now(timezone(timedelta(hours=8))).isoformat(),
         'total_days': 0,
         'total_captures': 0,
         'days': []
