@@ -10,9 +10,9 @@ on:
        - cron: '0 22 * * *'   # 6:00 AM SGT
        - cron: '30 22 * * *'   # 6:30 AM SGT
 
-       - cron: '30 08 * * *'  # 4:30 PM SGT
-       - cron: '0 09 * * *'   # 5:00 PM SGT
-       - cron: '30 09 * * *'  # 5:30 PM SGT
+       - cron: '30 8 * * *'  # 4:30 PM SGT
+       - cron: '0 9 * * *'   # 5:00 PM SGT
+       - cron: '30 9 * * *'  # 5:30 PM SGT
        - cron: '0 10 * * *'   # 6:00 PM SGT
        - cron: '30 10 * * *'   # 6:30 PM SGT
        - cron: '0 11 * * *'   # 7:00 PM SGT
