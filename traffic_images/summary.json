@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-01-21T22:54:25.447447",
-  "total_days": 2,
-  "total_captures": 8,
+  "last_updated": "2026-01-22T00:11:31.524503",
+  "total_days": 3,
+  "total_captures": 9,
   "days": [
     {
       "date": "2026-01-20",
@@ -12,6 +12,11 @@
       "date": "2026-01-21",
       "captures": 4,
       "images": 12
+    },
+    {
+      "date": "2026-01-22",
+      "captures": 1,
+      "images": 3
     }
   ]
 }
