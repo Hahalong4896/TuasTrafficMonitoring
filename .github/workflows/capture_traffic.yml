@@ -16,6 +16,8 @@ on:
        - cron: '30 21 * * *'  # 5:30 AM SGT
        - cron: '0 22 * * *'   # 6:00 AM SGT
        - cron: '30 22 * * *'   # 6:30 AM SGT
+       - cron: '0 23 * * *'   # 7:00 AM SGT
+       - cron: '30 23 * * *'   # 7:30 AM SGT
        #- cron: '*/5 * * * *' 
   workflow_dispatch:
 permissions:
