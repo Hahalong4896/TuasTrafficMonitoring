@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-25T05:39:18.887930+08:00",
+  "last_updated": "2026-01-25T06:27:06.073503+08:00",
   "timezone": "Asia/Singapore (SGT)",
   "total_days": 6,
-  "total_captures": 36,
+  "total_captures": 37,
   "days": [
     {
       "date": "2026-01-20",
@@ -31,8 +31,8 @@
     },
     {
       "date": "2026-01-25",
-      "captures": 4,
-      "images": 16
+      "captures": 5,
+      "images": 20
     }
   ]
 }
